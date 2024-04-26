@@ -13,26 +13,26 @@ function jugar() {
 
     if (jugador === computadora) {
 
-        console.log("¡Es un empate!");
+        alert("¡Es un empate!");
 
     }
 
     else if ((jugador === "piedra" && computadora === "tijera") || (jugador === "papel" && computadora === "piedra") || (jugador === "tijera" && computadora === "papel")) {
 
-        console.log("¡Ganaste esta ronda!");
+        alert("¡Ganaste esta ronda!");
 
         jugadorPuntuacion++;
 
     }
 
     else {
-        console.log("¡La computadora gana esta ronda!");
+        alert("¡La computadora gana esta ronda!");
 
         computadoraPuntuacion++;
     }
 
 
-    console.log(`Tu puntuación: ${jugadorPuntuacion} - Puntuación de la computadora: ${computadoraPuntuacion}`);
+    alert(`Tu puntuación: ${jugadorPuntuacion} - Puntuación de la computadora: ${computadoraPuntuacion}`);
 
     let jugarOtraVez = confirm("¿Quieres jugar de nuevo?");
 
@@ -40,7 +40,7 @@ function jugar() {
         jugar();
 
     } else {
-        console.log("¡Gracias por jugar!");
+        alert("¡Gracias por jugar!");
     }
 }
 
