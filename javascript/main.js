@@ -40,7 +40,7 @@ function jugar() {
         jugar();
 
     } else {
-        alert("¡Gracias por jugar!");
+        console.log("¡Gracias por jugar!");
     }
 }
 
